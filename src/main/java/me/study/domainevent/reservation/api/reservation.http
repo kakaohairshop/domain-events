@@ -1,0 +1,33 @@
+POST http://localhost:8080/reserve
+Content-Type: application/json
+
+{
+  "shopId": 1,
+  "productId": 1,
+  "treatmentDate": "2021-05-25",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "amount": 10000
+}
+
+###
+
+
+POST http://localhost:8080/reserve
+Content-Type: application/json
+
+{
+  "shopId": 1,
+  "productId": 1,
+  "treatmentDate": "2021-05-25",
+  "startTime": "12:00",
+  "endTime": "13:00",
+  "amount": 10000
+}
+
+###
+
+POST http://localhost:8080/pay/1
+Content-Type: application/json
+
+###
