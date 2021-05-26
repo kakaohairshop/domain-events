@@ -1,4 +1,4 @@
-package me.study.domainevent.reservation.service;
+package me.study.domainevent.reservation.application;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

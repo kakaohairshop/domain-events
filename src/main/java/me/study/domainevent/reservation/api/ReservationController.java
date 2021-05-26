@@ -3,7 +3,7 @@ package me.study.domainevent.reservation.api;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import me.study.domainevent.reservation.dto.ReservationCreateRequest;
-import me.study.domainevent.reservation.service.ReservationService;
+import me.study.domainevent.reservation.application.ReservationService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
