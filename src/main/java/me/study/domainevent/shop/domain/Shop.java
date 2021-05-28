@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import me.study.domainevent.common.domain.AggregateRootBaseEntity;
-import org.springframework.data.domain.AbstractAggregateRoot;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;

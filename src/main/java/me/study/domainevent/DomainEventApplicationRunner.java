@@ -1,11 +1,11 @@
 package me.study.domainevent;
 
 import lombok.RequiredArgsConstructor;
+import me.study.domainevent.common.vo.Price;
 import me.study.domainevent.shop.domain.Product;
 import me.study.domainevent.shop.domain.ProductGroup;
 import me.study.domainevent.shop.domain.Shop;
 import me.study.domainevent.shop.domain.ShopRepository;
-import me.study.domainevent.common.vo.Price;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
