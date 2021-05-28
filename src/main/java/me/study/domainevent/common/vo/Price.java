@@ -10,11 +10,13 @@ import java.math.BigDecimal;
 @Getter
 @Embeddable
 public class Price {
+    public static final String INVALID_PRICE_MESSAGE = "가격은 0보다 크거나 같아야 합니다.";
+
     private final BigDecimal price;
 
     public Price(BigDecimal price) {
         if (price.compareTo(BigDecimal.ZERO) < 0) {
-            throw new IllegalArgumentException("가격은 0보다 크거나 같아야 합니다.");
+            throw new IllegalArgumentException(INVALID_PRICE_MESSAGE);
         }
         this.price = price;
     }
