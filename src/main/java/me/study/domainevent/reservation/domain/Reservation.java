@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import me.study.domainevent.common.domain.AggregateRootBaseEntity;
+import me.study.domainevent.common.domain.DomainValidator;
 import me.study.domainevent.common.vo.Price;
 
 import javax.persistence.Embedded;
@@ -56,7 +57,7 @@ public class Reservation extends AggregateRootBaseEntity<Reservation> {
         return new Reservation(shopId, productId, treatmentDate, startTime, endTime, ReservationStatus.READY, amount);
     }
 
-    public Reservation validate(ReservationValidator reservationValidator) {
+    public Reservation validate(DomainValidator reservationValidator) {
         reservationValidator.valid(this);
         return this;
     }

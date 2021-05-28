@@ -2,15 +2,17 @@ package me.study.domainevent.reservation.domain;
 
 import lombok.RequiredArgsConstructor;
 import me.study.domainevent.common.annotation.DomainService;
+import me.study.domainevent.common.domain.DomainValidator;
 import me.study.domainevent.shop.domain.Shop;
 import me.study.domainevent.shop.domain.ShopRepository;
 
 @RequiredArgsConstructor
 @DomainService
-public class ReservationValidator {
+public class ReservationValidator implements DomainValidator<Reservation> {
     private final ShopRepository shopRepository;
     private final ReservationRepository reservationRepository;
 
+    @Override
     public void valid(Reservation reservation) {
         Long shopId = reservation.getShopId();
         validateShop(reservation, shopId);
